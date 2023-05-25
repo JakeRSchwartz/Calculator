@@ -1,0 +1,101 @@
+
+.calcBody {
+    width:50vh;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    border:2px solid black;
+    border-radius: 15px;
+    height: var(75vh);
+    min-height: 500px; 
+    align-items:center;
+    margin:auto;
+    background: darkcyan;
+}
+.screen {
+    text-align: right;
+    width:90%;
+    height: 150px;
+    overflow:auto;
+    border: 2px solid black;
+    margin:15px;
+    border-radius:15px;
+    background-color: beige;
+    word-wrap:break-word;
+    word-break: break-all;
+    
+    
+}
+.clearDeleteBody{
+    width:90%;
+    height:50px;
+    display:flex;
+    justify-content: space-around;
+    
+    
+}
+.numberOperationsBody {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap:15px;
+    border-radius:15px;
+    margin:20px;
+    padding:10px;
+}
+.numberOperationsBody > * {
+border-radius: 5px;
+border:2px solid black;
+width:70px;
+height:60px;
+background: beige;
+margin: auto;
+font-size:20px;
+}
+.clear {
+    border:1px solid black;
+    border-radius: 15px;
+    width: 150px;
+    height:50px;
+    background: rgb(44, 153, 255);
+    color:black;
+    font-size: 20px;
+}
+.delete{
+    border: 1px solid black;
+     border-radius: 15px;
+     width: 150px;
+     height: 50px;
+     background: rgba(255, 104, 104, 0.741);
+     color: black;
+     font-size: 20px;
+}
+.numberOperationsBody > *:hover {
+    cursor:pointer;
+    background:rgb(209, 209, 181);
+}
+.clear:hover{
+    cursor:pointer;
+    background: rgb(32, 125, 211)
+}
+.delete:hover {
+    cursor:pointer;
+    background: rgba(209, 80, 80, 0.741);
+}
+#currentOperation{
+    font-size: 40px;
+    margin-right:10px;
+    margin-bottom: 20px;
+
+}
+#lastOperation{
+    font-size:25px;
+    margin-top:10px;
+    margin-right:10px;
+}
+footer{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top:100px;
+    font-size: 25px;
+    text-align: center;
+    color:black;
+}
