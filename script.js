@@ -31,7 +31,9 @@ equalButton.addEventListener('click', () => {
 delButton.addEventListener('click',() => Delete())
 
 function appendNumber(number) {
-    if(currentOp === '.' && currentOp.includes('.')) return;
+    if(number === '.' && currentOp.includes('.')) {
+        return;
+    }
     currentOp += number.toString()
     console.log(currentOp)
    }     
